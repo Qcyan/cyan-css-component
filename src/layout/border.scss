@@ -2,7 +2,6 @@
 //  mixin
 //***********
 
-
 //设置边框颜色
 @mixin border($name,$color) {
   .#{$prefix-name}bd-l-#{$name} {
@@ -47,6 +46,10 @@
   .#{$prefix-name}bd-w-r-#{$val} {
     border-right-width: #{$val}px;
   }
+}
+//圆角
+@mixin borderRadius($radius:4px) {
+  border-radius: $radius;
 }
 
 //**********
